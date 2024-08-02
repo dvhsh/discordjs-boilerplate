@@ -1,0 +1,33 @@
+{
+  "name": "discordjs-boilerplate",
+  "version": "1.0.0",
+  "description": "fully featured discord.js boilerplate",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
+  "scripts": {
+    "build": "tsc --project tsconfig.json && tsc-alias -p tsconfig.json",
+    "start": "npm run build && node dist/index.js",
+    "deploy": "node dist/deploy.js"
+  },
+  "author": "David @dvhsh (https://dvh.sh)",
+  "license": "GNU General Public License v3.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dvhsh/discordjs-boilerplate.git"
+  },
+  "dependencies": {
+    "@types/require-all": "^3.0.6",
+    "axios": "^1.6.2",
+    "convert": "^5.2.0",
+    "discord.js": "^14.12.1",
+    "mongoose": "^8.3.3",
+    "require-all": "^3.0.0",
+    "topgg-autoposter": "^2.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.8",
+    "dotenv": "^16.3.1",
+    "tsc-alias": "^1.8.8",
+    "typescript": "^5.4.5"
+  }
+}
